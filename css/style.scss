@@ -1,0 +1,135 @@
+body {
+  background: url(../img/background1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #00004d;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+html, body, .container-fluid {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  &:hover {
+    text-decoration: none;
+    color: #DEB887;
+  }
+}
+
+.row-logo {
+  position: fixed;
+  vertical-align: middle;
+  background-color: #00004d;
+  color: ivory;
+  height: 15%;
+  width: 100%;
+  border-bottom: 1px solid ivory;
+}
+
+.row-under {
+height: 15%;
+}
+
+.row-under2 {
+  height: 75%;
+}
+
+.logo-col {
+  height: 100%;
+  img {
+    height: 100%;
+  }
+}
+
+.nav-col {
+  height: 100%;
+  vertical-align: middle;
+}
+
+.tab-content {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-size: larger;
+}
+
+.row-cont {
+  position: fixed;
+  width: 100%;
+  height: 75%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.center-col {
+  height: 100%;
+  padding-top: 3%;
+  background-color: rgba(255, 255, 240, 0.2);
+}
+
+.row-foot {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(21, 21, 72, 0.91);
+  border-top: 1px solid ivory;
+  padding: 15px;
+  height: 10%;
+}
+
+.nav-tabs {
+  float: right;
+  border: none;
+  text-align: center;
+  margin-right: 10%;
+  height: 100%;
+  display: table;
+  > li {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+    a {
+      border: none;
+      color: ivory;
+      font-size: 16px;
+      &:hover {
+        background-color: transparent;
+        color: #DEB887;
+      }
+    }
+    &.active {
+      > a, > a:focus {
+        font-size: 17px;
+        color: #DEB887;
+        border: none;
+        background-color: transparent;
+        font-weight: bold;
+        &:hover {
+          background-color: transparent;
+          color: #DEB887;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+#portfolio .center-col a {
+  width: 310px;
+  margin-bottom: 10px;
+  text-align: center;
+  img {
+    margin-top: 10px;
+    //overflow: hidden;
+    //width: 310px;
+    border-radius: 4px;
+    box-shadow: 0 0 30px black;
+    padding: 5px;
+    width: 300px;
+  }
+}
